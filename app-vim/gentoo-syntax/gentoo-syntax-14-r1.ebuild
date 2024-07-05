@@ -20,7 +20,7 @@ src_install() {
 	cp -R ${WORKDIR}/${P}/* ${D}/usr/share/vim/vimfiles/
 }
 
-src_postinst() {
+pkg_postinst() {
 	ewarn "The syntax highlighting will not out of the box on neovim."
 	ewarn "To enable it follow the instructions at:"
 	ewarn "https://wiki.gentoo.org/wiki/Neovim"
