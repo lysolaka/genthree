@@ -39,5 +39,6 @@ src_compile() {
 }
 
 src_install() {
-	eninja DESTDIR=${D} install
+	cd ${BUILD_DIR}
+	meson_install --destdir ${D}
 }
