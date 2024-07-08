@@ -299,13 +299,16 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
-IUSE=""
+IUSE="+base server"
+REQUIRED_USE="|| (base server)"
 
 RDEPEND=""
 DEPEND="${RDEPEND}"
 BDEPEND=">=virtual/rust-1.77.1"
 
 src_install() {
-	cargo_src_install --path ./ownserver_server/
+	if use server; then
+		cargo_src_install --path ./ownserver_server/
+	fi
 	cargo_src_install --path ./ownserver/
 }
