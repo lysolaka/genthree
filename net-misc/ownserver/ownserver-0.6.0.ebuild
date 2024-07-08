@@ -300,7 +300,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 IUSE="+base server"
-REQUIRED_USE="|| (base server)"
+REQUIRED_USE="|| ( base server )"
 
 RDEPEND=""
 DEPEND="${RDEPEND}"
@@ -310,5 +310,7 @@ src_install() {
 	if use server; then
 		cargo_src_install --path ./ownserver_server/
 	fi
-	cargo_src_install --path ./ownserver/
+	if use base; then
+		cargo_src_install --path ./ownserver/
+	fi
 }
