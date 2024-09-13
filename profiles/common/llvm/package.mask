@@ -1,2 +1,2 @@
 # ld.lld fixes for media-sound/sox will be present in this repo
-#media-sound/sox::gentoo
+media-sound/sox::gentoo
