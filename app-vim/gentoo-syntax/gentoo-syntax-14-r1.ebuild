@@ -16,7 +16,7 @@ src_install() {
 	rm "${WORKDIR}/${P}/README.rst"
 	rm "${WORKDIR}/${P}/Makefile"
 	mkdir -p "${D}/usr/share/vim/vimfiles"
-	cp -R "${WORKDIR}/${P}/*" "${D}/usr/share/vim/vimfiles/"
+	cp -R ${WORKDIR}/${P}/* "${D}/usr/share/vim/vimfiles/"
 }
 
 pkg_postinst() {
