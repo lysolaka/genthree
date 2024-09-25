@@ -292,7 +292,7 @@ inherit cargo
 DESCRIPTION="Expose your local game server to the Internet."
 HOMEPAGE="https://github.com/Kumassy/ownserver"
 
-SRC_URI="https://github.com/Kumassy/ownserver/archive/refs/tags/v${PV}.tar.gz
+SRC_URI="https://github.com/Kumassy/ownserver/archive/refs/tags/v${PV}.tar.gz -> ${PN}-${PV}.tar.gz
 	${CARGO_CRATE_URIS}"
 
 LICENSE="MIT"
@@ -302,8 +302,6 @@ KEYWORDS="~amd64"
 IUSE="+base server"
 REQUIRED_USE="|| ( base server )"
 
-RDEPEND=""
-DEPEND="${RDEPEND}"
 BDEPEND=">=virtual/rust-1.77.1"
 
 src_install() {

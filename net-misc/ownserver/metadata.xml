@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-  <maintainer type="person">
-    <email>lysolaka@gmail.com</email>
-    <description>Repository maintainer</description>
-  </maintainer>
-  <use>
-	<flag name="base">Base ownserver binary</flag>
-	<flag name="server">Build ownserver_server binary</flag>
-  </use>
+	<upstream>
+		<remote-id type="github">lysolaka/eselect-kubler</remote-id>
+	</upstream>
+	<maintainer type="person">
+		<email>lysolaka@gmail.com</email>
+		<description>Repository maintainer</description>
+	</maintainer>
+	<use>
+		<flag name="base">Base ownserver binary</flag>
+		<flag name="server">Build ownserver_server binary</flag>
+	</use>
 </pkgmetadata>
