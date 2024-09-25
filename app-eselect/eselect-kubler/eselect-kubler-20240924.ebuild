@@ -13,7 +13,6 @@ SRC_URI="https://github.com/lysolaka/eselect-kubler/archive/${EGIT_COMMIT}.tar.g
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE=""
 
 RDEPEND="app-admin/eselect
 || ( =app-containers/kubler-0.9.10a =app-containers/kubler-0.9.10b )"

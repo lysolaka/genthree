@@ -5,24 +5,23 @@ EAPI=8
 
 DESCRIPTION="A generic, extendable build orchestrator."
 HOMEPAGE="https://github.com/edannenberg/kubler"
-LICENSE="GPL-2"
 
 inherit bash-completion-r1
 
 inherit vcs-snapshot
 EGIT_COMMIT="f74cfd5"
 SRC_URI="https://github.com/babykart/kubler/archive/${EGIT_COMMIT}.tar.gz -> ${P}.tar.gz"
+LICENSE="GPL-2"
 
+SLOT="fork"
 KEYWORDS="amd64"
 IUSE="+docker podman +rlwrap"
-SLOT="fork"
 
-DEPEND=""
 RDEPEND="dev-vcs/git
 		 app-eselect/eselect-kubler
-         docker? ( app-containers/docker app-misc/jq )
-         podman? ( app-containers/podman )
-         rlwrap? ( app-misc/rlwrap )"
+		 docker? ( app-containers/docker app-misc/jq )
+		 podman? ( app-containers/podman )
+		 rlwrap? ( app-misc/rlwrap )"
 
 src_install() {
 	insinto /usr/share/${PN}/${PN}_fork
@@ -36,7 +35,7 @@ src_install() {
 	fperms 0755 /usr/share/${PN}/${PN}_fork/lib/ask.sh
 
 	if [[ ! -e ${EPREFIX}/usr/bin/kubler ]]; then
-		dosym /usr/share/${PN}/${PN}_fork/kubler.sh /usr/bin/kubler
+		dosym "${EPREFIX}/usr/share/${PN}/${PN}_fork/kubler.sh" "${EPREFIX}/usr/bin/kubler"
 	fi
 
 	insinto /etc/
