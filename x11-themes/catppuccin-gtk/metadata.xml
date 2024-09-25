@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>lysolaka@gmail.com</email>
+		<description>Repository maintainer</description>
+	</maintainer>
+	<use>
+		<flag name="frappe">Install frappe theme flavour</flag>
+		<flag name="latte">Install latte theme flavour</flag>
+		<flag name="macchiato">Install macchiato theme flavour</flag>
+		<flag name="mocha">Install mocha theme flavour</flag>
+	</use>
+</pkgmetadata>

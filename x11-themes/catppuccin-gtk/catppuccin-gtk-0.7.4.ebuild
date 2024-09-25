@@ -1,4 +1,3 @@
-
 EAPI=8
 
 DESCRIPTION="Soothing pastel theme for GTK"
