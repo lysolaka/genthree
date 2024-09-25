@@ -15,7 +15,6 @@ KEYWORDS="~alpha amd64 arm arm64 hppa ~loong ~m68k ~mips ~ppc ppc64 ~riscv ~s390
 IUSE="static static-libs test"
 RESTRICT="!test? ( test )"
 
-RDEPEND=""
 DEPEND="!prefix? ( >=sys-kernel/linux-headers-2.6.11 )"
 
 PATCHES=(
