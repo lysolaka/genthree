@@ -10,14 +10,13 @@ SRC_URI="https://gitweb.gentoo.org/proj/gentoo-syntax.git/snapshot/${P}.tar.bz2"
 LICENSE="vim"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
 
 src_install() {
-	rm ${WORKDIR}/${P}/COPYING
-	rm ${WORKDIR}/${P}/README.rst
-	rm ${WORKDIR}/${P}/Makefile
-	mkdir -p ${D}/usr/share/vim/vimfiles
-	cp -R ${WORKDIR}/${P}/* ${D}/usr/share/vim/vimfiles/
+	rm "${WORKDIR}/${P}/COPYING"
+	rm "${WORKDIR}/${P}/README.rst"
+	rm "${WORKDIR}/${P}/Makefile"
+	mkdir -p "${D}/usr/share/vim/vimfiles"
+	cp -R "${WORKDIR}/${P}/*" "${D}/usr/share/vim/vimfiles/"
 }
 
 pkg_postinst() {
