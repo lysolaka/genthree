@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<upstream>
+		<remote-id type="github">asweigart/pyautogui</remote-id>
+	</upstream>
+	<maintainer type="person">
+		<email>lysolaka@gmail.com</email>
+		<description>Repository maintainer</description>
+	</maintainer>
+	<use>
+		<flag name="screenshot">Pull in dependencies required for screenshot capturing</flag>
+		<flag name="msgbox">Pull in dependencies required for displaying message boxes</flag>
+		<flag name="tweening">Pull in dependencies required for mouse movement effects</flag>
+	</use>
+</pkgmetadata>
