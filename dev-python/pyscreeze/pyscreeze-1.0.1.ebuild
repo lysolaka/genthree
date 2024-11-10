@@ -19,6 +19,7 @@ IUSE=""
 RDEPEND="
 	>=dev-python/python-xlib-0.33
 	>=dev-python/pillow-11.0.0-r1[jpeg]
+	>=media-gfx/scrot-1.10
 "
 DEPEND="${RDEPEND}"
 
