@@ -21,9 +21,9 @@ IUSE="+screenshot msgbox tweening"
 
 RDEPEND="
 	>=dev-python/python-xlib-0.33
-	screenshot? (>=dev-python/pyscreeze-1.0.1)
-	msgbox? (>=dev-python/pymsgbox-1.0.9)
-	tweening? (>=dev-python/pytweening-1.2.0)
+	screenshot? ( >=dev-python/pyscreeze-1.0.1 )
+	msgbox? ( >=dev-python/pymsgbox-1.0.9 )
+	tweening? ( >=dev-python/pytweening-1.2.0 )
 "
 DEPEND="${RDEPEND}"
 
