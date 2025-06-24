@@ -1,3 +1,4 @@
 amd64 llvm/desktop dev
+amd64 llvm/desktop/systemd dev
 amd64 llvm/desktop/plasma dev
 amd64 llvm/desktop/plasma/systemd dev
