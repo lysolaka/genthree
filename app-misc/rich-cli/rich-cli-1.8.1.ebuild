@@ -15,11 +15,14 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 
-DEPEND="
+RDEPEND="
 	>=dev-python/rich-12.4.0[${PYTHON_USEDEP}]
 	>=dev-python/click-8.2.1[${PYTHON_USEDEP}]
-	>=dev-python/textual-0.1.18[${PYTHON_USEDEP}]
+	>=dev-python/textual-0.1.7[${PYTHON_USEDEP}]
+	<dev-python/textual-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/requests-2.0.0[${PYTHON_USEDEP}]
 	>=dev-python/rich-rst-1.1.7[${PYTHON_USEDEP}]
 "
-RDEPEND="${DEPEND}"
+DEPEND="${RDEPEND}"
+
+distutils_enable_tests "import-check"
