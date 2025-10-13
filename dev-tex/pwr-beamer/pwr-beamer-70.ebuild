@@ -18,4 +18,5 @@ src_install() {
 	latex-package_src_doinstall sty
 	insinto "${TEXMF}"/tex/latex/pwr-beamer
 	doins Hr_p1.pdf Hr_p3.pdf
+	doins *.png
 }
