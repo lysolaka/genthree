@@ -10,7 +10,7 @@ HOMEPAGE="https://git.kcir.pwr.edu.pl/ssztuka/pwr-beamer-themes"
 SRC_URI="http://panamint.kcir.pwr.edu.pl/~ssztuka/devspace/${PN}-v${PV}.tar.gz"
 S="${WORKDIR}/${PN}-v${PV}"
 
-LICENSE="LPPL-1.2 GPL-3.0"
+LICENSE="LPPL-1.2 GPL-3"
 SLOT="0"
 KEYWORDS="amd64"
 
