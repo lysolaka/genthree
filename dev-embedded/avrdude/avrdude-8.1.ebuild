@@ -16,6 +16,7 @@ IUSE="ftdi readline"
 
 RDEPEND="
 	dev-libs/hidapi
+	dev-libs/libserialport
 	virtual/libelf:=
 	virtual/libusb:0
 	virtual/libusb:1
