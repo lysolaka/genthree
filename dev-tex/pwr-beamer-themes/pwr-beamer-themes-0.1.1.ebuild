@@ -7,7 +7,7 @@ inherit latex-package
 
 DESCRIPTION="Beamer theme collection for WUST (PWR) presentations"
 HOMEPAGE="https://git.kcir.pwr.edu.pl/ssztuka/pwr-beamer-themes"
-SRC_URI="http://panamint.kcir.pwr.edu.pl/~ssztuka/devspace/${PN}-v${PV}.tar.gz"
+SRC_URI="https://git.kcir.pwr.edu.pl/ssztuka/pwr-beamer-themes/-/archive/v${PV}/${PN}-v${PV}.tar.gz"
 S="${WORKDIR}/${PN}-v${PV}"
 
 LICENSE="LPPL-1.2 GPL-3"
